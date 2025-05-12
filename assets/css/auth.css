@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
+
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    background: linear-gradient(135deg, #8e24aa, #ce93d8);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    direction: rtl;
+}
+
+form {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    animation: slideIn 0.6s ease-out;
+}
+
+h2 {
+    color: #6a1b9a;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #8e24aa;
+    outline: none;
+    box-shadow: 0 0 5px #ba68c8;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #8e24aa;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6a1b9a;
+}
+
+/* انیمیشن ورود فرم */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
